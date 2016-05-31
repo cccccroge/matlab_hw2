@@ -28,7 +28,7 @@ h = 10.^(-6);
 v_1 = -20.*e.^(-0.01.*(10-h).*(10-h)).*sin(20.*pi.*(10-h) + 2.*pi./5);
 v_2 = -20.*e.^(-0.01.*(10+h).*(10+h)).*sin(20.*pi.*(10+h) + 2.*pi./5);
 x_10 = (v_1 + v_2).*(2.*h)./2;
-fprintf('x(10) = %.11f N\n', x_10)
+fprintf('x(10) = %.11f m\n', x_10)
 
 % (e)
 % the distance should be abs-val of integration of v(t)|0~10
